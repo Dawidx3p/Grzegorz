@@ -699,15 +699,10 @@
 
     .nav-links a {
       display: flex;
-      width: 100%;
       justify-content: center;
       text-align: center;
       font-size: 0.95rem;
       box-sizing: border-box;
-    }
-    
-    .nav-links li {
-      width: 100%;
     }
 
     .section-heading,

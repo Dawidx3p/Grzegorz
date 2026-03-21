@@ -509,7 +509,7 @@
   }
 
   .featured-image-wrap {
-    min-height: 320px;
+    min-height: 120px;
   }
 
   .featured-content,
@@ -639,7 +639,7 @@
   }
 
   .featured-image-wrap {
-    min-height: 320px;
+    min-height: 220px;
   }
 
   .featured-content,
@@ -732,7 +732,7 @@
     }
 
     .featured-image-wrap {
-      min-height: 260px;
+      min-height: 160px;
       border-radius: 18px;
     }
 

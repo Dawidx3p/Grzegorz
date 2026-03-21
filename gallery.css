@@ -281,14 +281,6 @@
     background: #111;
   }
   
-  .card-wide .card-image {
-    min-height: 330px;
-  }
-  
-  .card-tall .card-image {
-    min-height: 360px;
-  }
-  
   .card-image img {
     width: 100%;
     height: 100%;
@@ -494,13 +486,6 @@
       grid-column: span 6;
     }
   
-    .card-wide .card-image {
-      min-height: 290px;
-    }
-  
-    .card-tall .card-image {
-      min-height: 620px;
-    }
   }
   
   @media (max-width: 860px) {
@@ -523,14 +508,6 @@
     .card-wide,
     .card-tall {
       grid-column: span 1;
-    }
-  
-    .card-wide .card-image {
-      min-height: 260px;
-    }
-  
-    .card-tall .card-image {
-      min-height: 460px;
     }
   
     .contact-inner {

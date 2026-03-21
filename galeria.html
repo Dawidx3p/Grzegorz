@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria | Grzegorz Kozdrój</title>
+  <meta
+    name="description"
+    content="Galeria prac Grzegorza Kozdroja. Malarstwo historyczne, pejzaże, sztuka sakralna i portrety w eleganckiej prezentacji."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Grzegorz Kozdrój</a>
+
+      <nav class="main-nav" aria-label="Nawigacja główna">
+        <a href="index.html">Strona główna</a>
+        <a href="gallery.html" class="active">Galeria</a>
+        <a href="#kolekcja">Kolekcja</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Galeria</p>
+          <h1>Obrazy, które budują napięcie w przestrzeni</h1>
+          <p class="hero-subline">Malarstwo / światło / emocje</p>
+          <p class="hero-text">
+            Każdy obraz to osobna historia — budowana światłem, kompozycją i emocją.
+            To prace, które nie są tylko dodatkiem do wnętrza, ale jego najmocniejszym punktem.
+          </p>
+        </div>
+
+        <div class="hero-feature">
+          <button
+            class="hero-feature-card js-open-from-hero"
+            type="button"
+            data-index="0"
+            aria-label="Otwórz wyróżnioną pracę w pełnym widoku"
+          >
+            <img src="images/gallery-item3.png" alt="Scena historyczna autorstwa Grzegorza Kozdroja" />
+            <span class="hero-feature-overlay"></span>
+            <span class="hero-feature-text">
+              <span class="hero-feature-label">Wyróżniona praca</span>
+              <strong>Scena historyczna</strong>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-intro">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-label">Kolekcja</p>
+          <h2>Obrazy, które budują charakter przestrzeni</h2>
+        </div>
+        <div>
+          <p>
+            Te prace nie pełnią roli tła. Każdy obraz przyciąga uwagę i nadaje przestrzeni
+  wyrazisty charakter — niezależnie od tego, czy jest to monumentalna scena,
+  spokojny pejzaż czy sztuka sakralna.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="kolekcja">
+      <div class="container">
+        <div class="gallery-grid">
+          <button
+            class="gallery-card card-wide"
+            type="button"
+            data-index="0"
+            data-title="Scena historyczna"
+            data-category="Historia"
+            data-description="Malarstwo historyczne / kompozycja wielofigurowa"
+            data-full="images/gallery-item3.png"
+            aria-label="Otwórz obraz Scena historyczna"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item3.png" alt="Scena historyczna autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Historia</span>
+              <span class="card-title">Scena historyczna</span>
+              <span class="card-description">Malarstwo historyczne / kompozycja wielofigurowa</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-wide"
+            type="button"
+            data-index="1"
+            data-title="Konie w pejzażu"
+            data-category="Pejzaż"
+            data-description="Pejzaż / światło / natura"
+            data-full="images/gallery-item1.png"
+            aria-label="Otwórz obraz Konie w pejzażu"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item1.png" alt="Konie w pejzażu autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Pejzaż</span>
+              <span class="card-title">Konie w pejzażu</span>
+              <span class="card-description">Pejzaż / światło / natura</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-tall"
+            type="button"
+            data-index="2"
+            data-title="Dzieciątko Jezus"
+            data-category="Sakralne"
+            data-description="Sztuka sakralna / obraz pionowy"
+            data-full="images/gallery-item2.png"
+            aria-label="Otwórz obraz Dzieciątko Jezus"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item2.png" alt="Dzieciątko Jezus autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Sakralne</span>
+              <span class="card-title">Dzieciątko Jezus</span>
+              <span class="card-description">Sztuka sakralna / obraz pionowy</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-wide"
+            type="button"
+            data-index="3"
+            data-title="Pejzaż górski"
+            data-category="Pejzaż"
+            data-description="Monumentalny krajobraz / światło i przestrzeń"
+            data-full="images/gallery-item4.png"
+            aria-label="Otwórz obraz Pejzaż górski"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item4.png" alt="Pejzaż górski autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Pejzaż</span>
+              <span class="card-title">Pejzaż górski</span>
+              <span class="card-description">Monumentalny krajobraz / światło i przestrzeń</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-tall"
+            type="button"
+            data-index="4"
+            data-title="Jan Paweł II"
+            data-category="Portret"
+            data-description="Portret / realizm / światło"
+            data-full="images/gallery-item11.png"
+            aria-label="Otwórz obraz Jan Paweł II"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item11.png" alt="Portret Jana Pawła II autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Portret</span>
+              <span class="card-title">Jan Paweł II</span>
+              <span class="card-description">Portret / realizm / światło</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-tall"
+            type="button"
+            data-index="5"
+            data-title="Święty z krzyżem"
+            data-category="Sakralne"
+            data-description="Sztuka sakralna / kompozycja pionowa"
+            data-full="images/gallery-item7.png"
+            aria-label="Otwórz obraz Święty z krzyżem"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item7.png" alt="Święty z krzyżem autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Sakralne</span>
+              <span class="card-title">Święty z krzyżem</span>
+              <span class="card-description">Sztuka sakralna / kompozycja pionowa</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-wide"
+            type="button"
+            data-index="6"
+            data-title="Kościół i anioł"
+            data-category="Sakralne"
+            data-description="Architektura sakralna / symboliczna kompozycja"
+            data-full="images/gallery-item8.png"
+            aria-label="Otwórz obraz Kościół i anioł"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item8.png" alt="Kościół i anioł autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Sakralne</span>
+              <span class="card-title">Kościół i anioł</span>
+              <span class="card-description">Architektura sakralna / symboliczna kompozycja</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-tall"
+            type="button"
+            data-index="7"
+            data-title="Maryja"
+            data-category="Sakralne"
+            data-description="Sztuka sakralna / obraz z certyfikatem"
+            data-full="images/gallery-item6.png"
+            aria-label="Otwórz obraz Maryja"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item6.png" alt="Obraz Maryi autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Sakralne</span>
+              <span class="card-title">Maryja</span>
+              <span class="card-description">Sztuka sakralna / obraz z certyfikatem</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-wide"
+            type="button"
+            data-index="8"
+            data-title="Tatrzański pejzaż"
+            data-category="Pejzaż"
+            data-description="Pejzaż górski / światło zachodu"
+            data-full="images/gallery-item5.png"
+            aria-label="Otwórz obraz Tatrzański pejzaż"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item5.png" alt="Tatrzański pejzaż autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Pejzaż</span>
+              <span class="card-title">Tatrzański pejzaż</span>
+              <span class="card-description">Pejzaż górski / światło zachodu</span>
+            </span>
+          </button>
+
+          <button
+            class="gallery-card card-wide"
+            type="button"
+            data-index="9"
+            data-title="Brzozy"
+            data-category="Pejzaż"
+            data-description="Pejzaż / rytm pni / światło"
+            data-full="images/gallery-item9.png"
+            aria-label="Otwórz obraz Brzozy"
+          >
+            <span class="card-image">
+              <img src="images/gallery-item9.png" alt="Brzozy autorstwa Grzegorza Kozdroja" />
+            </span>
+            <span class="card-meta">
+              <span class="card-category">Pejzaż</span>
+              <span class="card-title">Brzozy</span>
+              <span class="card-description">Pejzaż / rytm pni / światło</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-block" id="kontakt">
+      <div class="container contact-inner">
+        <div>
+          <p class="section-label">Kontakt</p>
+          <h2>Zainteresował Cię któryś z obrazów?</h2>
+          <p>
+            Skontaktuj się, aby sprawdzić dostępność wybranej pracy,
+  uzyskać szczegóły lub porozmawiać o indywidualnym zamówieniu.
+          </p>
+        </div>
+
+        <a href="index.html" class="contact-link">Powrót na stronę główną</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd obrazu">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+    <div class="lightbox-shell">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Zamknij">
+        ×
+      </button>
+
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Poprzedni obraz">
+        ‹
+      </button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-image-wrap">
+          <img id="lightboxImage" src="" alt="" />
+        </div>
+
+        <div class="lightbox-caption">
+          <p class="lightbox-category" id="lightboxCategory"></p>
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDescription"></p>
+        </div>
+      </div>
+
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Następny obraz">
+        ›
+      </button>
+    </div>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

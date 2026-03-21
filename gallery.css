@@ -282,11 +282,11 @@
   }
   
   .card-wide .card-image {
-    min-height: 430px;
+    min-height: 330px;
   }
   
   .card-tall .card-image {
-    min-height: 660px;
+    min-height: 360px;
   }
   
   .card-image img {
@@ -495,7 +495,7 @@
     }
   
     .card-wide .card-image {
-      min-height: 390px;
+      min-height: 290px;
     }
   
     .card-tall .card-image {

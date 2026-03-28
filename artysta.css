@@ -886,6 +886,10 @@ button {
     color: #ffffff;
     border-color: #1d1b18;
   }
+
+  .floating-label {
+    margin-bottom: 0px;
+  }
 }
 
 /* SMALL MOBILE */
@@ -936,7 +940,7 @@ button {
     width: calc(100% - 20px);
     left: 10px;
     right: 10px;
-    padding: 14px 14px;
+    padding: 7px 14px;
   }
 
   .hero-floating-top {

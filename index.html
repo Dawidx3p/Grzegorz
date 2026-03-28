@@ -7,15 +7,37 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header  class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Grzegorz Kozdrój</a>
+
+      <nav class="main-nav" aria-label="Nawigacja główna">
+        <a href="index.html" class="active">Strona główna</a>
+        <a href="artysta.html">O artyście</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <button
+        class="mobile-menu-btn"
+        type="button"
+        aria-label="Otwórz menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav">
+      <a href="index.html" class="active">Strona główna</a>
+      <a href="artysta.html">O artyście</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </header>
   <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Grzegorz Kozdrój</div>
-      <ul class="nav-links">
-        <li><a href="#o-artyscie">O artyście</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
+    
 
     <div class="hero-content">
       <p class="hero-subtitle">Malarstwo / Emocje / Forma</p>
@@ -43,13 +65,13 @@
 
         <div class="preview-grid">
           <article class="preview-card">
-            <img src="images/gallery-item4.png" alt="Obraz Grzegorza Kozdroja 1">
+            <img src="images/gallery-item4.jpg" alt="Obraz Grzegorza Kozdroja 1">
           </article>
           <article class="preview-card">
-            <img src="images/gallery-item8.png" alt="Obraz Grzegorza Kozdroja 2">
+            <img src="images/gallery-item8.jpg" alt="Obraz Grzegorza Kozdroja 2">
           </article>
           <article class="preview-card">
-            <img src="images/gallery-item9.png" alt="Obraz Grzegorza Kozdroja 3">
+            <img src="images/gallery-item9.jpg" alt="Obraz Grzegorza Kozdroja 3">
           </article>
         </div>
 
@@ -61,7 +83,7 @@
     <section class="featured-work" id="wyrozniona-praca">
       <div class="container featured-grid">
         <div class="featured-image-wrap">
-          <img src="images/gallery-item3.png" alt="Wyróżniona praca Grzegorza Kozdroja" />
+          <img src="images/gallery-item3.jpg" alt="Wyróżniona praca Grzegorza Kozdroja" />
         </div>
 
         <div class="featured-content">
@@ -122,6 +144,8 @@
             Każda praca powstaje z myślą o tym, jak będzie funkcjonować we wnętrzu —
             jak przyciąga wzrok, buduje nastrój i nadaje charakter.
           </p>
+          <p class="microcopy">Poznaj proces, podejście i historię stojącą za każdą pracą.</p>
+          <a href="artysta.html" class="btn btn-secondary">Poznaj artystę</a>
         </div>
 
         <div class="about-box">
@@ -176,5 +200,6 @@
       </div>
     </section>
   </main>
+  <script src="artysta.js"></script>
 </body>
 </html>

@@ -10,32 +10,83 @@ const lightboxDescription = document.getElementById("lightboxDescription");
 const lightboxClose = document.getElementById("lightboxClose");
 const lightboxPrev = document.getElementById("lightboxPrev");
 const lightboxNext = document.getElementById("lightboxNext");
+const lightboxThumbs = document.getElementById("lightboxThumbs");
 
-const items = galleryButtons.map((button) => ({
-  full: button.dataset.full,
-  title: button.dataset.title,
-  category: button.dataset.category,
-  description: button.dataset.description,
-  alt: button.querySelector("img")?.alt || button.dataset.title
-}));
+const items = galleryButtons.map((button) => {
+  let details = [];
+
+  try {
+    details = JSON.parse(button.dataset.details || "[]");
+  } catch (e) {
+    details = [];
+  }
+
+  if (!details.length && button.dataset.full) {
+    details = [button.dataset.full];
+  }
+
+  return {
+    full: button.dataset.full,
+    title: button.dataset.title,
+    category: button.dataset.category,
+    description: button.dataset.description,
+    alt: button.querySelector("img")?.alt || button.dataset.title,
+    details
+  };
+});
 
 let currentIndex = 0;
+let currentDetailIndex = 0;
 
-function renderLightbox(index) {
+function renderThumbs(item) {
+  if (!lightboxThumbs) return;
+
+  if (!item.details || item.details.length <= 1) {
+    lightboxThumbs.innerHTML = "";
+    lightboxThumbs.classList.remove("is-visible");
+    return;
+  }
+
+  lightboxThumbs.classList.add("is-visible");
+  lightboxThumbs.innerHTML = item.details
+    .map((src, index) => {
+      const active = index === currentDetailIndex;
+      return `
+        <button class="lightbox-thumb${active ? " is-active" : ""}" data-index="${index}">
+          <img src="${src}" alt="${item.alt}" />
+        </button>
+      `;
+    })
+    .join("");
+
+  Array.from(lightboxThumbs.querySelectorAll(".lightbox-thumb")).forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentDetailIndex = Number(btn.dataset.index);
+      renderLightbox(currentIndex, currentDetailIndex);
+    });
+  });
+}
+
+function renderLightbox(index, detailIndex = 0) {
   const item = items[index];
   if (!item) return;
 
   currentIndex = index;
+  currentDetailIndex = detailIndex;
 
-  lightboxImage.src = item.full;
+  const src = item.details[currentDetailIndex] || item.full;
+
+  lightboxImage.src = src;
   lightboxImage.alt = item.alt;
   lightboxCategory.textContent = item.category || "";
   lightboxTitle.textContent = item.title || "";
   lightboxDescription.textContent = item.description || "";
+
+  renderThumbs(item);
 }
 
 function openLightbox(index) {
-  renderLightbox(index);
+  renderLightbox(index, 0);
   lightbox.classList.add("active");
   lightbox.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
@@ -48,13 +99,13 @@ function closeLightbox() {
 }
 
 function showNext() {
-  const nextIndex = (currentIndex + 1) % items.length;
-  renderLightbox(nextIndex);
+  const next = (currentIndex + 1) % items.length;
+  renderLightbox(next, 0);
 }
 
 function showPrev() {
-  const prevIndex = (currentIndex - 1 + items.length) % items.length;
-  renderLightbox(prevIndex);
+  const prev = (currentIndex - 1 + items.length) % items.length;
+  renderLightbox(prev, 0);
 }
 
 galleryButtons.forEach((button, index) => {
@@ -83,5 +134,5 @@ document.addEventListener("keydown", (event) => {
 
 lightboxImage.addEventListener("error", () => {
   lightboxTitle.textContent = "Nie udało się wczytać obrazu";
-  lightboxDescription.textContent = "Sprawdź ścieżkę w data-full oraz nazwę pliku w folderze images.";
+  lightboxDescription.textContent = "Sprawdź data-full i data-details.";
 });

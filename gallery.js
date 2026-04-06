@@ -7,6 +7,7 @@ const lightboxImage = document.getElementById("lightboxImage");
 const lightboxCategory = document.getElementById("lightboxCategory");
 const lightboxTitle = document.getElementById("lightboxTitle");
 const lightboxDescription = document.getElementById("lightboxDescription");
+const lightboxMetaLine = document.getElementById("lightboxMetaLine");
 const lightboxClose = document.getElementById("lightboxClose");
 const lightboxPrev = document.getElementById("lightboxPrev");
 const lightboxNext = document.getElementById("lightboxNext");
@@ -30,6 +31,7 @@ const items = galleryButtons.map((button) => {
     title: button.dataset.title,
     category: button.dataset.category,
     description: button.dataset.description,
+    meta: button.dataset.meta || "",
     alt: button.querySelector("img")?.alt || button.dataset.title,
     details
   };
@@ -81,6 +83,11 @@ function renderLightbox(index, detailIndex = 0) {
   lightboxCategory.textContent = item.category || "";
   lightboxTitle.textContent = item.title || "";
   lightboxDescription.textContent = item.description || "";
+
+  if (lightboxMetaLine) {
+    lightboxMetaLine.textContent = item.meta || "";
+    lightboxMetaLine.style.display = item.meta ? "block" : "none";
+  }
 
   renderThumbs(item);
 }
@@ -135,4 +142,9 @@ document.addEventListener("keydown", (event) => {
 lightboxImage.addEventListener("error", () => {
   lightboxTitle.textContent = "Nie udało się wczytać obrazu";
   lightboxDescription.textContent = "Sprawdź data-full i data-details.";
+
+  if (lightboxMetaLine) {
+    lightboxMetaLine.textContent = "";
+    lightboxMetaLine.style.display = "none";
+  }
 });

@@ -487,9 +487,9 @@
     object-fit: cover;
   }
   
-  .lightbox-caption {
+.lightbox-caption {
     width: 100%;
-    max-width: 900px;
+    max-width: 980px;
     text-align: center;
     padding: 0 12px;
   }
@@ -500,9 +500,20 @@
     line-height: 1.15;
   }
   
-  .lightbox-caption p:last-child {
+.lightbox-caption p:last-child {
     margin-top: 8px;
     color: var(--muted);
+  }
+
+.lightbox-meta-line {
+    margin-top: 10px;
+    max-width: 760px;
+    margin-inline: auto;
+    font-size: 0.7rem;
+    line-height: 1.45;
+    letter-spacing: 0.03em;
+    color: rgba(242, 237, 229, 0.42);
+    text-wrap: balance;
   }
   
   .lightbox-close,
@@ -704,6 +715,15 @@
     .lightbox-caption h3 {
       font-size: 1.25rem;
     }
+
+    .lightbox-meta-line {
+      margin-top: 8px;
+      max-width: 92%;
+      font-size: 0.66rem;
+      line-height: 1.4;
+      color: rgba(242, 237, 229, 0.38);
+    }
+
     .lightbox-thumb {
       width: 68px;
       height: 68px;

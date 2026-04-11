@@ -948,7 +948,7 @@ button {
   }
 
   .hero-floating-bottom {
-    bottom: 10px;
+    bottom: -15px;
   }
 
   .artist-bio-content,

@@ -33,6 +33,7 @@
   />
   <link rel="stylesheet" href="artysta.css" />
   <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="navigation.css" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -63,7 +64,7 @@
       
           <nav class="main-nav" aria-label="Nawigacja główna">
             <a href="index.html">Strona główna</a>
-            <a href="artysta.html" class="active">O artyście</a>
+            <a href="artysta.html" class="active" aria-current="page">O artyście</a>
             <a href="galeria.html">Galeria</a>
             <a href="#kontakt">Kontakt</a>
           </nav>
@@ -73,18 +74,19 @@
             type="button"
             aria-label="Otwórz menu"
             aria-expanded="false"
+        aria-controls="mobile-menu"
           >
             <span></span>
             <span></span>
           </button>
         </div>
       
-        <div class="mobile-nav">
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Nawigacja mobilna" hidden>
           <a href="index.html">Strona główna</a>
-          <a href="artysta.html" class="active">O artyście</a>
+          <a href="artysta.html" class="active" aria-current="page">O artyście</a>
           <a href="galeria.html">Galeria</a>
           <a href="#kontakt">Kontakt</a>
-        </div>
+        </nav>
       </header>
 
   <main class="artist-page">

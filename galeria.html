@@ -32,6 +32,7 @@
   />
   <link rel="stylesheet" href="gallery.css" />
   <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="navigation.css" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -54,7 +55,7 @@
   </script>
   <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
 </head>
-<body>
+<body class="gallery-page">
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">Grzegorz Kozdrój</a>
@@ -62,7 +63,7 @@
       <nav class="main-nav" aria-label="Nawigacja główna">
         <a href="index.html">Strona główna</a>
         <a href="artysta.html">O artyście</a>
-        <a href="galeria.html" class="active">Galeria</a>
+        <a href="galeria.html" class="active" aria-current="page">Galeria</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
   
@@ -71,18 +72,19 @@
         type="button"
         aria-label="Otwórz menu"
         aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         <span></span>
         <span></span>
       </button>
     </div>
   
-    <div class="mobile-nav">
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Nawigacja mobilna" hidden>
       <a href="index.html">Strona główna</a>
       <a href="artysta.html">O artyście</a>
-      <a href="galeria.html" class="active">Galeria</a>
+      <a href="galeria.html" class="active" aria-current="page">Galeria</a>
       <a href="#kontakt">Kontakt</a>
-    </div>
+    </nav>
   </header>
 
   <main>

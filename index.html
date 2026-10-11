@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="navigation.css" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,13 +49,13 @@
   </script>
   <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
 </head>
-<body>
+<body class="home-page">
   <header  class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">Grzegorz Kozdrój</a>
 
       <nav class="main-nav" aria-label="Nawigacja główna">
-        <a href="index.html" class="active">Strona główna</a>
+        <a href="index.html" class="active" aria-current="page">Strona główna</a>
         <a href="artysta.html">O artyście</a>
         <a href="galeria.html">Galeria</a>
         <a href="#kontakt">Kontakt</a>
@@ -65,18 +66,19 @@
         type="button"
         aria-label="Otwórz menu"
         aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         <span></span>
         <span></span>
       </button>
     </div>
 
-    <div class="mobile-nav">
-      <a href="index.html" class="active">Strona główna</a>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Nawigacja mobilna" hidden>
+      <a href="index.html" class="active" aria-current="page">Strona główna</a>
       <a href="artysta.html">O artyście</a>
       <a href="galeria.html">Galeria</a>
       <a href="#kontakt">Kontakt</a>
-    </div>
+    </nav>
   </header>
   <header class="hero">
     

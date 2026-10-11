@@ -10,10 +10,8 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
     background: #f5f1ea;
     color: #1f1f1f;
-    line-height: 1.6;
     width: 100%;
     overflow-x: hidden;
   }
@@ -47,13 +45,6 @@
   }
   
   
-  .logo {
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  
 /* HEADER */
 
 .site-header {
@@ -79,11 +70,6 @@
 .brand {
   position: relative;
   z-index: 3;
-  font-size: 0.98rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  line-height: 1.2;
 }
 
 .main-nav {
@@ -139,16 +125,11 @@
   
   .hero-subtitle,
   .eyebrow {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
     margin-bottom: 16px;
     opacity: 0.85;
   }
   
   .hero h1 {
-    font-size: clamp(2.6rem, 6vw, 5.2rem);
-    line-height: 1.02;
     margin-bottom: 22px;
     max-width: 100%;
     overflow-wrap: anywhere;
@@ -156,7 +137,6 @@
   
   .hero-text {
     max-width: 620px;
-    font-size: 1.05rem;
     margin-bottom: 28px;
     color: rgba(255, 255, 255, 0.88);
   }
@@ -167,7 +147,6 @@
     border-radius: 999px;
     background: #ffffff;
     color: #111111;
-    font-weight: 600;
     transition: transform 0.2s ease, opacity 0.2s ease;
   }
   
@@ -205,15 +184,12 @@
   
   .themes-intro h2 {
     margin-top: 14px;
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.05;
   }
   
   .themes-intro p:last-child {
     margin-top: 18px;
     max-width: 520px;
     color: #4f4a45;
-    font-size: 1.05rem;
   }
   
   .themes-columns {
@@ -231,13 +207,11 @@
   }
   
   .theme-block h3 {
-    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   
   .theme-block p {
     color: #6b645d;
-    font-size: 0.95rem;
   }
   
   /* bardzo subtelny efekt */
@@ -250,17 +224,8 @@
     margin-bottom: 24px;
   }
   
-  .section-heading h2,
-  .about h2,
-  .contact h2,
-  .featured-content h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.1;
-  }
-  
-  .intro-text {
+.intro-text {
     max-width: 760px;
-    font-size: 1.08rem;
     margin-bottom: 42px;
     color: #4f4a45;
   }
@@ -304,7 +269,6 @@
     margin-top: 20px;
     max-width: 700px;
     color: #4f4a45;
-    font-size: 1.05rem;
   }
   
   .about-box {
@@ -312,8 +276,6 @@
     color: #ffffff;
     padding: 40px;
     border-radius: 24px;
-    font-size: 1.2rem;
-    line-height: 1.5;
   }
   
   .contact-box {
@@ -357,7 +319,6 @@
   .featured-text {
     margin: 22px 0 30px;
     color: #4f4a45;
-    font-size: 1.05rem;
   }
 
   .value-section {
@@ -387,15 +348,11 @@
   .process-step {
     display: inline-block;
     margin-bottom: 16px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
     color: #7b6751;
   }
 
   .value-card h3,
   .process-card h3 {
-    font-size: 1.2rem;
     margin-bottom: 12px;
   }
 
@@ -465,15 +422,11 @@
 .testimonial-home-content h2 {
   margin-top: 14px;
   max-width: 14ch;
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  line-height: 1.06;
 }
 
 .testimonial-home-quote {
   margin-top: 24px;
   max-width: 56ch;
-  font-size: 1.08rem;
-  line-height: 1.85;
   color: #3f3933;
 }
 
@@ -484,13 +437,10 @@
 }
 
 .testimonial-home-author strong {
-  font-size: 1rem;
-  font-weight: 600;
   color: #1f1f1f;
 }
 
 .testimonial-home-author span {
-  font-size: 0.95rem;
   color: #6a625a;
 }
 
@@ -500,7 +450,6 @@
     border-radius: 999px;
     border: 1px solid #1f1f1f;
     color: #1f1f1f;
-    font-weight: 600;
     transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
   }
 
@@ -567,13 +516,7 @@
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: auto;
-    padding: 20px 0 56px;
-    background:
-      linear-gradient(to bottom, rgba(15, 15, 15, 0.72), rgba(15, 15, 15, 0.42)),
-      url("images/hero.jpg") center/cover no-repeat;
-  }
+
 
   .navbar {
     width: 92%;
@@ -583,12 +526,7 @@
     gap: 14px;
   }
 
-  .logo {
-    font-size: 1rem;
-    letter-spacing: 0.06em;
-  }
-
-  .nav-links {
+.nav-links {
     width: 100%;
     gap: 12px;
     flex-wrap: wrap;
@@ -639,8 +577,6 @@
     background: rgba(255, 255, 255, 0.68);
     border: 1px solid rgba(255, 255, 255, 0.8);
     color: rgba(29, 27, 24, 0.8);
-    font-size: 0.92rem;
-    font-weight: 500;
   }
 
   .mobile-nav a.active {
@@ -657,21 +593,16 @@
 
   .hero-subtitle,
   .eyebrow {
-    font-size: 0.74rem;
-    letter-spacing: 0.16em;
     margin-bottom: 12px;
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 10vw, 3.6rem);
-    line-height: 1.04;
     margin-bottom: 18px;
     max-width: 10ch;
   }
 
   .hero-text {
     max-width: 34ch;
-    font-size: 0.98rem;
     margin-bottom: 24px;
   }
 
@@ -699,7 +630,6 @@
   .about-text p:last-child,
   .featured-text,
   .contact-box p {
-    font-size: 1rem;
     max-width: 100%;
   }
 
@@ -759,10 +689,6 @@
     max-width: 100%;
   }
 
-  .testimonial-home-quote {
-    font-size: 1rem;
-    line-height: 1.72;
-  }
 }/* MOBILE */
 @media (max-width: 900px) {
   .themes-grid,
@@ -775,13 +701,7 @@
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: auto;
-    padding: 20px 0 56px;
-    background:
-      linear-gradient(to bottom, rgba(15, 15, 15, 0.321), rgba(15, 15, 15, 0.42)),
-      url("images/hero.jpg") center/cover no-repeat;
-  }
+
 
   .navbar {
     width: 92%;
@@ -791,12 +711,7 @@
     gap: 14px;
   }
 
-  .logo {
-    font-size: 1rem;
-    letter-spacing: 0.06em;
-  }
-
-  .nav-links {
+.nav-links {
     width: 100%;
     gap: 12px;
     flex-wrap: wrap;
@@ -818,21 +733,16 @@
 
   .hero-subtitle,
   .eyebrow {
-    font-size: 0.74rem;
-    letter-spacing: 0.16em;
     margin-bottom: 12px;
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 10vw, 3.6rem);
-    line-height: 1.04;
     margin-bottom: 18px;
     max-width: 10ch;
   }
 
   .hero-text {
     max-width: 34ch;
-    font-size: 0.98rem;
     margin-bottom: 24px;
   }
 
@@ -860,7 +770,6 @@
   .about-text p:last-child,
   .featured-text,
   .contact-box p {
-    font-size: 1rem;
     max-width: 100%;
   }
 
@@ -935,9 +844,6 @@
     background: transparent;
     border: 1px solid transparent;
     color: rgba(255, 255, 255, 0.92);
-    font-size: 0.95rem;
-    font-weight: 500;
-    letter-spacing: 0.01em;
     transition:
       background var(--transition),
       color var(--transition),
@@ -978,21 +884,13 @@
       max-width: calc(100% - 28px);
     }
 
-    .hero {
-      padding: 18px 0 44px;
-    }
+
 
     .hero h1 {
-      font-size: clamp(2rem, 11vw, 3rem);
       max-width: 9ch;
     }
 
-    .hero-text {
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
-
-    .nav-links {
+.nav-links {
       gap: 10px;
     }
 
@@ -1000,7 +898,6 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      font-size: 0.95rem;
       box-sizing: border-box;
     }
 
@@ -1009,16 +906,7 @@
       margin-bottom: 20px;
     }
 
-    .section-heading h2,
-    .about h2,
-    .contact h2,
-    .featured-content h2,
-    .themes-intro h2 {
-      font-size: clamp(1.7rem, 8vw, 2.4rem);
-      line-height: 1.12;
-    }
-
-    .preview-grid,
+.preview-grid,
     .themes-columns,
     .value-grid,
     .process-grid {
@@ -1052,22 +940,10 @@
       border-radius: 18px;
     }
 
-    .testimonial-home-content h2 {
-      font-size: clamp(1.7rem, 8vw, 2.35rem);
-      line-height: 1.1;
+.testimonial-home-quote {
     }
 
-    .testimonial-home-quote {
-      font-size: 0.96rem;
-      line-height: 1.68;
-    }
-
-    .testimonial-home-author strong {
-      font-size: 0.96rem;
-    }
-
-    .testimonial-home-author span {
-      font-size: 0.9rem;
+.testimonial-home-author span {
     }
 
     .contact-actions {
@@ -1079,8 +955,6 @@
     margin-top: 12px;
     margin-bottom: 16px;
   
-    font-size: 0.9rem;
-    line-height: 1.5;
     color: rgba(29, 27, 24, 0.6);
   
     max-width: 420px;
@@ -1102,8 +976,73 @@
 
   @media (max-width: 520px) {
     .microcopy {
-      font-size: 0.85rem;
       margin-top: 10px;
       margin-bottom: 14px;
     }
   }
+
+/* Mobile opening: give the painting space above the copy. */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    justify-content: flex-end;
+    padding: clamp(160px, 34vh, 320px) 0 40px;
+    padding-top: clamp(160px, 34svh, 320px);
+    background:
+      linear-gradient(to bottom,
+        rgba(15, 15, 15, 0.18) 0%,
+        rgba(15, 15, 15, 0.12) 30%,
+        rgba(15, 15, 15, 0.65) 65%,
+        rgba(15, 15, 15, 0.88) 100%),
+      url("images/hero.jpg") 55% center / cover no-repeat;
+  }
+
+  .hero-content {
+    padding-top: 0;
+  }
+}
+
+
+/* Desktop opening: left-aligned copy leaves the painting visible on the right. */
+@media (min-width: 901px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    justify-content: center;
+    padding: 140px 0 80px;
+    background:
+      linear-gradient(to bottom, rgba(10, 10, 10, 0.4), transparent 24%),
+      linear-gradient(to right,
+        rgba(10, 10, 10, 0.86) 0%,
+        rgba(10, 10, 10, 0.72) 30%,
+        rgba(10, 10, 10, 0.28) 58%,
+        rgba(10, 10, 10, 0.08) 100%),
+      url("images/hero.jpg") center 42% / cover no-repeat;
+  }
+
+  .hero-content {
+    width: min(1180px, 92%);
+    max-width: 1180px;
+    padding-top: 0;
+    overflow: visible;
+  }
+
+  .hero h1 {
+    width: min(54%, 640px);
+    margin-bottom: 24px;
+  }
+
+  .hero .hero-text {
+    width: min(46%, 500px);
+    margin-bottom: 32px;
+  }
+
+  .hero .btn {
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 30px;
+  }
+}

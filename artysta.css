@@ -30,12 +30,10 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(166, 123, 73, 0.1), transparent 26%),
     linear-gradient(180deg, #f7f3ec 0%, #efe5d8 100%);
-  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -84,11 +82,6 @@ button {
 .brand {
   position: relative;
   z-index: 3;
-  font-size: 0.98rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  line-height: 1.2;
 }
 
 .main-nav {
@@ -144,10 +137,6 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.76rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
   color: var(--accent);
 }
 
@@ -161,9 +150,6 @@ button {
 
 .section-intro h2 {
   margin-top: 16px;
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
 }
 
 .btn {
@@ -173,7 +159,6 @@ button {
   min-height: 54px;
   padding: 14px 24px;
   border-radius: 999px;
-  font-weight: 600;
   transition:
     transform var(--transition),
     background var(--transition),
@@ -216,15 +201,11 @@ button {
 
 .artist-hero-copy h1 {
   margin: 18px 0 24px;
-  font-size: clamp(3rem, 6vw, 5.8rem);
-  line-height: 0.94;
-  letter-spacing: -0.06em;
   max-width: 10ch;
 }
 
 .artist-lead {
   max-width: 60ch;
-  font-size: 1.04rem;
   color: var(--muted);
 }
 
@@ -281,16 +262,7 @@ button {
 .floating-label {
   display: block;
   margin-bottom: 8px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
   color: var(--accent);
-}
-
-.hero-floating-card strong {
-  font-size: 0.98rem;
-  line-height: 1.45;
 }
 
 /* BIO */
@@ -314,7 +286,6 @@ button {
 }
 
 .artist-bio-content p {
-  font-size: 1.02rem;
   color: var(--muted);
 }
 
@@ -368,16 +339,11 @@ button {
 .value-number {
   display: inline-block;
   margin-bottom: 16px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
   color: var(--accent);
 }
 
 .value-card h3 {
   margin-bottom: 12px;
-  font-size: 1.25rem;
-  line-height: 1.2;
 }
 
 .value-card p {
@@ -395,8 +361,6 @@ button {
 
 .artist-focus-copy h2 {
   margin: 16px 0 20px;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1.04;
 }
 
 .artist-focus-copy p:last-child {
@@ -420,8 +384,6 @@ button {
 .focus-item span {
   display: block;
   margin-bottom: 8px;
-  font-size: 1.08rem;
-  font-weight: 600;
 }
 
 .focus-item p {
@@ -447,16 +409,11 @@ button {
   position: absolute;
   top: 18px;
   left: 24px;
-  font-size: 4rem;
-  line-height: 1;
   color: rgba(255, 255, 255, 0.16);
 }
 
 .quote-box blockquote {
   max-width: 18ch;
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  line-height: 1.06;
-  letter-spacing: -0.03em;
 }
 
 /* CONTACT */
@@ -476,8 +433,6 @@ button {
 
 .artist-contact-box h2 {
   margin: 16px 0 16px;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.04;
 }
 
 .artist-contact-box p {
@@ -609,8 +564,6 @@ button {
     background: rgba(255, 255, 255, 0.68);
     border: 1px solid rgba(255, 255, 255, 0.8);
     color: rgba(29, 27, 24, 0.8);
-    font-size: 0.92rem;
-    font-weight: 500;
   }
 
   .mobile-nav a.active {
@@ -644,17 +597,10 @@ button {
 
   .artist-hero-copy h1 {
     margin: 14px 0 18px;
-    font-size: clamp(2.5rem, 12vw, 4.2rem);
-    line-height: 0.94;
     max-width: 8.8ch;
   }
 
-  .artist-lead {
-    font-size: 0.98rem;
-    line-height: 1.7;
-  }
-
-  .hero-image-main {
+.hero-image-main {
     position: relative;
     inset: auto;
     min-height: 420px;
@@ -697,14 +643,7 @@ button {
     bottom: 14px;
   }
 
-  .floating-label {
-    font-size: 0.66rem;
-    letter-spacing: 0.15em;
-  }
-
-  .hero-floating-card strong {
-    font-size: 0.92rem;
-    line-height: 1.4;
+.hero-floating-card strong {
   }
 
   .hero-actions {
@@ -723,25 +662,13 @@ button {
     gap: 24px;
   }
 
-  .section-intro h2,
-  .artist-focus-copy h2,
-  .artist-contact-box h2 {
-    font-size: clamp(1.9rem, 8vw, 2.6rem);
-    line-height: 1.04;
-  }
-
-  .artist-bio-content {
+.artist-bio-content {
     padding: 24px 20px;
     border-radius: 24px;
     gap: 16px;
   }
 
-  .artist-bio-content p {
-    font-size: 0.98rem;
-    line-height: 1.72;
-  }
-
-  .values-heading {
+.values-heading {
     margin-bottom: 22px;
   }
 
@@ -757,21 +684,13 @@ button {
 
   .value-number {
     margin-bottom: 12px;
-    font-size: 0.72rem;
   }
 
   .value-card h3 {
     margin-bottom: 10px;
-    font-size: 1.05rem;
-    line-height: 1.25;
   }
 
-  .value-card p {
-    font-size: 0.95rem;
-    line-height: 1.65;
-  }
-
-  .artist-focus-list {
+.artist-focus-list {
     gap: 12px;
   }
 
@@ -781,16 +700,10 @@ button {
   }
 
   .focus-item span {
-    font-size: 1rem;
     margin-bottom: 6px;
   }
 
-  .focus-item p {
-    font-size: 0.92rem;
-    line-height: 1.6;
-  }
-
-  .artist-quote {
+.artist-quote {
     padding-top: 0;
   }
 
@@ -802,13 +715,10 @@ button {
   .quote-mark {
     top: 8px;
     left: 16px;
-    font-size: 3.2rem;
   }
 
   .quote-box blockquote {
     max-width: 100%;
-    font-size: clamp(1.45rem, 7vw, 2rem);
-    line-height: 1.14;
   }
 
   .artist-contact {
@@ -824,8 +734,6 @@ button {
   .artist-contact-box p {
     margin: 0;
     max-width: none;
-    font-size: 0.96rem;
-    line-height: 1.7;
   }
 
   .artist-contact-actions {
@@ -868,8 +776,6 @@ button {
     background: rgba(255, 255, 255, 0.68);
     border: 1px solid rgba(255, 255, 255, 0.8);
     color: rgba(29, 27, 24, 0.8);
-    font-size: 0.92rem;
-    font-weight: 500;
     transition:
       background var(--transition),
       color var(--transition),
@@ -897,8 +803,6 @@ button {
 @media (max-width: 520px) {
   .brand {
     max-width: 170px;
-    font-size: 0.84rem;
-    letter-spacing: 0.12em;
   }
 
   .mobile-menu-btn {
@@ -914,7 +818,6 @@ button {
 
   .mobile-nav a {
     min-height: 42px;
-    font-size: 0.84rem;
     padding: 8px 10px;
     border-radius: 14px;
   }
@@ -924,7 +827,6 @@ button {
   }
 
   .artist-hero-copy h1 {
-    font-size: clamp(2.2rem, 12vw, 3.4rem);
     max-width: 8.2ch;
   }
 
@@ -960,14 +862,7 @@ button {
     padding-right: 16px;
   }
 
-  .section-intro h2,
-  .artist-focus-copy h2,
-  .artist-contact-box h2 {
-    font-size: clamp(1.7rem, 8.5vw, 2.2rem);
-  }
-
-  .quote-box blockquote {
-    font-size: clamp(1.3rem, 7vw, 1.8rem);
+.quote-box blockquote {
   }
   .mobile-nav {
     padding: 0 14px;
@@ -979,7 +874,6 @@ button {
   
   .mobile-nav a {
     min-height: 46px;
-    font-size: 0.86rem;
     border-radius: 14px;
     margin-top: 8px;
   }

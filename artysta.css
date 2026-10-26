@@ -468,11 +468,11 @@ button {
       border-color var(--transition),
       transform var(--transition);
   }
-  
+
   .mobile-menu-btn:hover {
     transform: translateY(-1px);
   }
-  
+
   .mobile-menu-btn span {
     width: 18px;
     height: 2px;
@@ -481,15 +481,15 @@ button {
     display: block;
     transition: transform var(--transition), opacity var(--transition);
   }
-  
+
   .mobile-menu-btn.is-active span:first-child {
     transform: translateY(4px) rotate(45deg);
   }
-  
+
   .mobile-menu-btn.is-active span:last-child {
     transform: translateY(-4px) rotate(-45deg);
   }
-  
+
   .mobile-nav {
     display: none;
   }
@@ -745,7 +745,7 @@ button {
   .mobile-menu-btn {
     display: inline-flex;
   }
-  
+
   .mobile-nav {
     display: block;
     max-height: 0;
@@ -757,13 +757,13 @@ button {
       opacity 0.25s ease,
       padding 0.25s ease;
   }
-  
+
   .mobile-nav.is-open {
     max-height: 320px;
     opacity: 1;
     padding: 0 14px 16px;
   }
-  
+
   .mobile-nav a {
     min-height: 50px;
     display: flex;
@@ -782,11 +782,11 @@ button {
       border-color var(--transition),
       transform var(--transition);
   }
-  
+
   .mobile-nav a:active {
     transform: scale(0.98);
   }
-  
+
   .mobile-nav a.active {
     background: #1d1b18;
     color: #ffffff;
@@ -867,11 +867,11 @@ button {
   .mobile-nav {
     padding: 0 14px;
   }
-  
+
   .mobile-nav.is-open {
     padding: 0 14px 14px;
   }
-  
+
   .mobile-nav a {
     min-height: 46px;
     border-radius: 14px;

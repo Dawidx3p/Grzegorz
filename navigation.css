@@ -251,3 +251,51 @@ body.home-page {
     border-bottom-color: rgba(242, 237, 229, 0.12);
   }
 }
+
+/* Contact shortcut on mobile, only on home and artist pages. */
+.mobile-contact { display: none; }
+@media (max-width: 900px) {
+  body:has(.mobile-contact) { padding-bottom: calc(92px + env(safe-area-inset-bottom, 0px)); }
+  .mobile-contact {
+    position: fixed;
+    z-index: 90;
+    right: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    min-height: 56px;
+    max-width: calc(100vw - 40px);
+    padding: 0;
+    border: 1px solid rgba(221, 191, 146, .38);
+    border-radius: 999px;
+    background: linear-gradient(135deg, #353029, #211e1a);
+    color: #faf4ea;
+    font: 500 14px/1.4 "Poppins", sans-serif;
+    letter-spacing: .01em;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(33, 26, 18, .22), 0 2px 5px rgba(33, 26, 18, .12), inset 0 1px 0 rgba(255, 255, 255, .07);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mobile-contact > svg {
+    width: 25px;
+    height: 25px;
+    color: #dfbe8f;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .mobile-contact:active { transform: translateY(2px); box-shadow: 0 3px 12px rgba(33, 26, 18, .2); }
+  .mobile-contact:focus-visible { outline: 3px solid #a67b49; outline-offset: 4px; }
+  .mobile-contact[hidden] { display: none; }
+}
+@media (hover: hover) and (max-width: 900px) {
+  .mobile-contact:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(33, 26, 18, .26); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-contact { transition: none; }
+}
